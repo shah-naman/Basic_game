@@ -28,6 +28,8 @@ public class QuestionActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         QuizHelper db = new QuizHelper(this); // my question bank class
         quesList = db.getAllQuestions(); // this will fetch all quetonall questions
         currentQ = quesList.get(qid); // the current question
